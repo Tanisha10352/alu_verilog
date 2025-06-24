@@ -4,7 +4,7 @@ This project presents a synthesizable 16-bit Enhanced Arithmetic Logic Unit (ALU
 
 ## Features
 
-- **Synthesizable** on standard EDA tools (e.g., Xilinx Vivado)
+- **Synthesizable** on standard EDA tools (e.g.Xilinx Vivado)
 - **16-bit** operand support with a **32-bit** result output
 - **Arithmetic Operations:**
   - Addition via four 4-bit Carry Look-Ahead Adders (CLAs) to enhance speed
