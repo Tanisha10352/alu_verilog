@@ -28,3 +28,7 @@ This project implements a fully functional **enhanced ALU** capable of performin
   - Successfully passed **RTL elaboration and synthesis** in Vivado
   - Modular, reusable design suitable for FPGA/ASIC projects
 
+## 📁 File Structure
+
+
+
