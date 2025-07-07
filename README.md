@@ -1,20 +1,30 @@
-# Enhanced ALU (Arithmetic Logic Unit)
+# Enhanced ALU (Arithmetic Logic Unit) – 16-bit Signed
 
-This project implements a fully synthesizable 16-bit signed Arithmetic Logic Unit (ALU) in Verilog, designed for academic and VLSI internship purposes.
+This project implements a fully functional **enhanced ALU** capable of performing signed 16-bit arithmetic and logic operations. The design is written in synthesizable **Verilog HDL** and includes a custom testbench to verify its correctness across a variety of input combinations.
 
-## 💡 Features
+## ✅ Features
 
-- **16-bit signed arithmetic**
-- Handles all major operations: 
-  - Addition, Subtraction, Multiplication, Division
-  - Bitwise AND, OR, XOR, NAND, NOR, XNOR
-  - Logical Shifts (Left, Right)
-- **Signed Restoring Division** using bitwise algorithm
-- **Carry-Lookahead Adder (CLA)** for fast addition
+- **Signed Arithmetic Operations:**
+  - Addition (with carry and overflow detection)
+  - Subtraction
+  - Multiplication (signed 16×16 → 32-bit)
+  - Division (restoring division algorithm with sign support)
+
+- **Logical & Bitwise Operations:**
+  - AND, OR, XOR, NOR, NAND, XNOR
+  - Left and right shift (logical)
+
 - **Status Flags:**
   - `Z` (Zero)
   - `N` (Negative)
   - `C` (Carry)
   - `V` (Overflow)
-- **Fully synthesizable RTL design** (Verified via toolchain synthesis)
+
+- **Testbench Verification:**
+  - All operations verified using a dedicated Verilog testbench
+  - Includes signed input combinations (positive & negative)
+
+- **Synthesizable Design:**
+  - Successfully passed **RTL elaboration and synthesis** in Vivado
+  - Modular, reusable design suitable for FPGA/ASIC projects
 
