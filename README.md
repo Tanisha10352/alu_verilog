@@ -1,22 +1,20 @@
-# Enhanced ALU in Verilog
+# Enhanced ALU (Arithmetic Logic Unit)
 
-This project presents a synthesizable 16-bit Enhanced Arithmetic Logic Unit (ALU) designed in Verilog. It is optimized for performance using pipelined and modular design principles, and is intended for showcasing in VLSI or hardware design internship applications.
+This project implements a fully synthesizable 16-bit signed Arithmetic Logic Unit (ALU) in Verilog, designed for academic and VLSI internship purposes.
 
-## Features
+## 💡 Features
 
-- **Synthesizable** on standard EDA tools (e.g.Xilinx Vivado)
-- **16-bit** operand support with a **32-bit** result output
-- **Arithmetic Operations:**
-  - Addition via four 4-bit Carry Look-Ahead Adders (CLAs) to enhance speed
-  - Subtraction using 2’s complement logic and CLA
-  - Pipelined multiplication to improve throughput
-  - Division using the restoring division algorithm
-- **Logical Operations:**
-  - AND, OR, NAND, NOR, XOR, XNOR
-- **Bitwise Shifts:**
-  - Left Shift
-  - Right Shift
-- **Design Principles:**
-  - Case-based control structure for operation selection
-  - Modular architecture for readability, testing, and reuse
+- **16-bit signed arithmetic**
+- Handles all major operations: 
+  - Addition, Subtraction, Multiplication, Division
+  - Bitwise AND, OR, XOR, NAND, NOR, XNOR
+  - Logical Shifts (Left, Right)
+- **Signed Restoring Division** using bitwise algorithm
+- **Carry-Lookahead Adder (CLA)** for fast addition
+- **Status Flags:**
+  - `Z` (Zero)
+  - `N` (Negative)
+  - `C` (Carry)
+  - `V` (Overflow)
+- **Fully synthesizable RTL design** (Verified via toolchain synthesis)
 
