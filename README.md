@@ -20,9 +20,10 @@ This project implements a fully functional **enhanced ALU** capable of performin
   - `C` (Carry)
   - `V` (Overflow)
 
-- **Testbench Verification:**
+- **Verification:**
   - All operations verified using a dedicated Verilog testbench
   - Includes signed input combinations (positive & negative)
+  - design also verified by using cocotb for randomly generated 50 input and operation code
 
 - **Synthesizable Design:**
   - Successfully passed **RTL elaboration and synthesis** in Vivado
