@@ -1,35 +1,26 @@
-# Enhanced ALU (Arithmetic Logic Unit) – 16-bit Signed
+# Enhanced ALU with cocotb Verification
 
-This project implements a fully functional **enhanced ALU** capable of performing signed 16-bit arithmetic and logic operations. The design is written in synthesizable **Verilog HDL** and includes a custom testbench to verify its correctness across a variety of input combinations.
+## 🔧 Overview
+This project implements a 16-bit signed Enhanced Arithmetic Logic Unit (ALU) in Verilog. It supports multiple operations including:
+- Addition, Subtraction, Multiplication, Division
+- Bitwise AND, OR, XOR, NAND, NOR, XNOR
 
-## ✅ Features
+The ALU is tested using the **cocotb** Python-based verification framework and visualized using **GTKWave**.
 
-- **Signed Arithmetic Operations:**
-  - Addition (with carry and overflow detection)
-  - Subtraction
-  - Multiplication (signed 16×16 → 32-bit)
-  - Division (restoring division algorithm with sign support)
+---
 
-- **Logical & Bitwise Operations:**
-  - AND, OR, XOR, NOR, NAND, XNOR
-  - Left and right shift (logical)
+## 🛠 Features
 
-- **Status Flags:**
-  - `Z` (Zero)
-  - `N` (Negative)
-  - `C` (Carry)
-  - `V` (Overflow)
-
-- **Verification:**
-  - All operations verified using a dedicated Verilog testbench
-  - Includes signed input combinations (positive & negative)
-  - design also verified by using cocotb for randomly generated 50 input and operation code
-
-- **Synthesizable Design:**
-  - Successfully passed **RTL elaboration and synthesis** in Vivado
-  - Modular, reusable design suitable for FPGA/ASIC projects
-
-
-
-
+| Opcode | Operation    |
+|--------|--------------|
+| 0000   | ADD          |
+| 0001   | SUBTRACT     |
+| 0010   | MULTIPLY     |
+| 0011   | DIVIDE       |
+| 0100   | AND          |
+| 0101   | OR           |
+| 0110   | NOR          |
+| 0111   | NAND         |
+| 1000   | XOR          |
+| 1001   | XNOR         |
 
